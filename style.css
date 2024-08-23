@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+input {
+    background-color: rgb(255, 255, 255);
+}
+
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+
+   
+}
+label {
+    font-weight: bold;
+}
+#terms{
+    font-size: 12px;
+}
+.container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 400px;
+    background-color: rgb(210, 158, 213);
+    padding: 10px;
+}
+#heading{
+   text-align: center;
+   padding: 15px;
+   color: rgb(48, 48, 48);
+}
+.form {
+    padding: 30px 40px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+select{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #929191;
+    display: block;
+    width: 80%;
+    padding: 10px;
+}
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-group small{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-style: italic;
+    visibility: hidden;
+}
+
+
+/* .form-group.success input {
+    border-color: #2ecc71;
+} */
+
+/* .form-group.error input {
+    border-color: #e74c3c;
+} */
+
+.form-group.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+/* 
+.form-group.success i.ion-ios-checkmark {
+    visibility: visible;
+    color: #2ecc71;
+} */
+/* 
+.form-group.error i.ion-android-alert {
+    visibility: visible;
+    color: #e74c3c;
+} */
+
+#submit {
+    background-color: rgb(54, 4, 69);
+    display: grid;
+    margin: auto;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#submit:hover{
+    background-color:white ;
+    color: rgb(54, 4, 69);
+}
+
+
+/* // Extra small devices */
+@media (max-width: 575.98px) {
+    .container {
+        width: 100%;
+    }
+    .form {
+        padding: 10px;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        width: 70%;
+    }
+    #heading{
+        font-size: 18px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        width: 50%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 50%
+    }
+
+}

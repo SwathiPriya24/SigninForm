@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Signin Form</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1 id="heading">Create Your BookMy Taxi Account</h1>
+
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" placeholder="Enter your First Name" id="firstname" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="">Last Name</label>
+                <input type="text" placeholder="" id="lastname" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="">Email Address</label>
+                <input type="text" placeholder="" id="email" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="">Mobile Number</label>
+                <input type="text" placeholder="" id="phonenumber" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" placeholder="" id="password" class="input" autocomplete="on">
+
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="">Gender</label>
+
+                <input type="radio" id="genderM" name="gender" value="Male"> Male
+                <input type="radio" id="genderF" name="gender" value="Female"> Female
+                <small></small>
+                <br>
+            </div>
+            <div class="form-group">
+                <label for="">City</label>
+                <select id="city">
+                    <option value="" disabled selected> Choose...</option>
+                    <option value="1">Chennai</option>
+                    <option value="2">Coimbatore</option>
+                    <option value="3">Tirunelveli</option>
+                    <option value="4">Madurai</option>
+                    <option value="4">Tiruchirappalli</option>
+                    <option value="6">Tiruppur</option>
+                    <option value="7">Thanjavur</option>
+                    <option value="8">Nagercoil</option>
+                    <option value="9"> Kanchipuram</option>
+                    <option value="10">Karur</option>
+                </select>
+                <small></small>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="agree" id="agree">
+                <span id="terms">I would like to kept informed of special promotions and offers by BookMyTaxi</span>
+                <small></small>
+            </div>
+            <button id='submit'>Register</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
